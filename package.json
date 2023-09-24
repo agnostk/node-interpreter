@@ -1,0 +1,14 @@
+{
+  "name": "interpreter",
+  "version": "1.0.0",
+  "description": "Node.js interpreter for Rinha de Compiler",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "Felipe Cardoso (agnostk)",
+  "license": "ISC",
+  "type": "module"
+}
