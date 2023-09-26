@@ -2,6 +2,7 @@ import { readFileSync } from "node:fs";
 import { interpret } from "./interpreter.js";
 
 const AST_FILE_PATH_FLAG = "-f";
+const SHOW_ELAPSED_TIME_FLAG = "-t";
 
 const getAstFilePath = () => {
   const index = process.argv.indexOf(AST_FILE_PATH_FLAG);
@@ -23,10 +24,23 @@ const getAstJSON = () => {
   return astFile || readFileSync("/var/rinha/source.rinha.json", "utf-8");
 };
 
+const showElapsedTime = () => {
+  return process.argv.includes(SHOW_ELAPSED_TIME_FLAG);
+};
+
+// This is a really cheap and lazy check to see if a function is pure. Don't rely on it.
+const isFunctionPure = (unparsedAst) => {
+  return unparsedAst.match(new RegExp('"Print"', "g")).length <= 1;
+};
+
 const run = () => {
   const astJSON = getAstJSON();
   const ast = JSON.parse(astJSON);
-  interpret(ast.expression);
+  const start = Date.now();
+  interpret(ast.expression, {}, isFunctionPure(astJSON));
+  if (showElapsedTime()) {
+    console.log(`Elapsed time: ${Date.now() - start}ms`);
+  }
 };
 
 run();

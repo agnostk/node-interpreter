@@ -189,7 +189,7 @@ const TEST_SUITE = [
   },
   {
     filename: "47.json",
-    expected: "1\n2\n3",
+    expected: "1\n2\n3\n1",
   },
   {
     filename: "48.json",
@@ -200,12 +200,24 @@ const TEST_SUITE = [
     expected: "1\n2\n3",
   },
   {
+    filename: "50.json",
+    expected: 1,
+  },
+  {
+    filename: "51.json",
+    expected: "Test\nTest\nTest\nTest\nTest\nfib: 2",
+  },
+  {
+    filename: "52.json",
+    expected: 9227465,
+  },
+  {
     filename: "print.json",
     expected: "Hello world",
   },
   {
     filename: "fib.json",
-    expected: 55,
+    expected: 12586269025,
   },
   {
     filename: "sum.json",
@@ -213,7 +225,7 @@ const TEST_SUITE = [
   },
   {
     filename: "combination.json",
-    expected: 45,
+    expected: 337959576966375,
   },
 ];
 

@@ -23,17 +23,25 @@
                 }
             ],
             "value": {
-                "kind": "Var",
-                "text": "x",
+                "kind": "Print",
+                "value": {
+                    "kind": "Var",
+                    "text": "x",
+                    "location": {
+                        "start": 24,
+                        "end": 25,
+                        "filename": "47.rinha"
+                    }
+                },
                 "location": {
-                    "start": 24,
-                    "end": 25,
+                    "start": 18,
+                    "end": 26,
                     "filename": "47.rinha"
                 }
             },
             "location": {
                 "start": 8,
-                "end": 27,
+                "end": 26,
                 "filename": "47.rinha"
             }
         },
@@ -43,8 +51,8 @@
                 "kind": "Var",
                 "text": "f",
                 "location": {
-                    "start": 29,
-                    "end": 30,
+                    "start": 28,
+                    "end": 29,
                     "filename": "47.rinha"
                 }
             },
@@ -55,14 +63,14 @@
                         "kind": "Int",
                         "value": 1,
                         "location": {
-                            "start": 37,
-                            "end": 38,
+                            "start": 36,
+                            "end": 37,
                             "filename": "47.rinha"
                         }
                     },
                     "location": {
-                        "start": 31,
-                        "end": 39,
+                        "start": 30,
+                        "end": 38,
                         "filename": "47.rinha"
                     }
                 },
@@ -72,14 +80,14 @@
                         "kind": "Int",
                         "value": 2,
                         "location": {
-                            "start": 47,
-                            "end": 48,
+                            "start": 46,
+                            "end": 47,
                             "filename": "47.rinha"
                         }
                     },
                     "location": {
-                        "start": 41,
-                        "end": 49,
+                        "start": 40,
+                        "end": 48,
                         "filename": "47.rinha"
                     }
                 },
@@ -89,33 +97,33 @@
                         "kind": "Int",
                         "value": 3,
                         "location": {
-                            "start": 57,
-                            "end": 58,
+                            "start": 56,
+                            "end": 57,
                             "filename": "47.rinha"
                         }
                     },
                     "location": {
-                        "start": 51,
-                        "end": 59,
+                        "start": 50,
+                        "end": 58,
                         "filename": "47.rinha"
                     }
                 }
             ],
             "location": {
-                "start": 29,
-                "end": 60,
+                "start": 28,
+                "end": 59,
                 "filename": "47.rinha"
             }
         },
         "location": {
             "start": 0,
-            "end": 60,
+            "end": 59,
             "filename": "47.rinha"
         }
     },
     "location": {
         "start": 0,
-        "end": 60,
+        "end": 59,
         "filename": "47.rinha"
     }
 }
